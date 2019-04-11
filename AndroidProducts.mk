@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_fajita.mk
+    $(LOCAL_DIR)/aoscp.mk

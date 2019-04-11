@@ -22,17 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := UNOFFICIAL
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common aoscp stuff.
+$(call inherit-product, vendor/aoscp/config/common_full_phone.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="orygas"
 
-PRODUCT_NAME := aosp_fajita
+PRODUCT_NAME := aoscp_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
