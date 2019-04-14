@@ -24,7 +24,7 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common aoscp stuff.
-$(call inherit-product, vendor/aoscp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
